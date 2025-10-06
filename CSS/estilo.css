@@ -20,7 +20,7 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 80px;
+  gap: clamp(40px, 6vw, 80px);
   padding: 0 40px;
 }
 
@@ -117,12 +117,12 @@ body, html {
   max-width: 1440px;
   margin: 60px auto;
   display: grid;
-  grid-template-columns: 1fr 1.3fr; /* duas colunas (esquerda + direita) */
-  gap: 60px;
-  padding: 0 40px;
+  grid-template-columns: 1fr; /* duas colunas (esquerda + direita) */
+  gap: 40px;
+  padding: 0 16px;
   align-items: start;
-}
 
+  
 
 /* Coluna esquerda */
 .aside {
