@@ -27,7 +27,7 @@ flex-direction: column;
 #banner{
   width: 100%;
   height: auto;
-  background-color: #F5F3F0;
+  background-color: #aea69b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@ flex-direction: column;
 
 .botao{
   text-decoration: none;
-  background-color: cadetblue;
+  background-color: rgb(99, 107, 107);
   color: #F5F3F0;
   padding: 14px 36px;
   display: inline-block;
