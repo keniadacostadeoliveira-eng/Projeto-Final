@@ -20,23 +20,24 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: clamp(40px, 6vw, 80px);
+  gap: 80px;
   padding: 0 40px;
 }
 
 /* ===== FOTO ===== */
 .foto1 {
   width: 320px;
-  height: 320px;
-  border-radius: 50%; /* círculo perfeito */
+  height: 400px;
+  border-radius: 50% / 40%; /* cria formato oval */
   object-fit: cover;
-  object-position: top center; /* mostra o rosto */
+  object-position: top center; /* foca no rosto */
   box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  background-color: #d3d1ce;
   transition: transform 0.3s ease;
 }
 
 .foto1:hover {
-  transform: scale(1.03);
+  transform: scale(1.03); /* leve zoom ao passar o mouse */
 }
 
 #banner .container {
@@ -117,12 +118,12 @@ body, html {
   max-width: 1440px;
   margin: 60px auto;
   display: grid;
-  grid-template-columns: 1fr; /* duas colunas (esquerda + direita) */
-  gap: 40px;
-  padding: 0 16px;
+  grid-template-columns: 1fr 1.3fr; /* duas colunas (esquerda + direita) */
+  gap: 60px;
+  padding: 0 40px;
   align-items: start;
 }
-  
+
 
 /* Coluna esquerda */
 .aside {
@@ -193,72 +194,72 @@ body, html {
 /* FIM MAIN  */
 
 /* INICIO FOOTER  */
-/* ===== FOOTER ===== */
-#footer {
-  width: 100%;
-  background-color: #F5F3F0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 60px 20px;
-  gap: 30px;
+#footer{
+   width: 100% ;
+    height: 400px;
+    background-color: #F5F3F0;
+margin: 0 auto;
+text-align: center;
+align-content: center;
+display: flex;
 }
 
-.fest {
-  max-width: 1200px;
-  width: 100%;
-  color: rgba(6, 153, 166, 1);
+
+.fest{
+    width:1440px ;
+    height: 400PX;
+  margin: 0 auto;
+display: flex;
+margin-top: 10px;
+    }
+    .tega{
+   width: 1440%;
+   height: 400px;  
+   justify-content: center; 
+   font-size: 30px;
+   margin: 0 auto;
+   display: block; 
+    }
+.fest h2{
+    font-size: 60px;
 }
-
-.fest h2 {
-  font-size: clamp(36px, 5vw, 60px);
-  margin-bottom: 20px;
+.fest{  
+    color: rgba(6, 153, 166, 1);
 }
-
-.tega {
-  font-size: clamp(18px, 2vw, 30px);
-  word-wrap: break-word;      /* permite quebrar o e-mail */
-  overflow-wrap: anywhere;    /* força quebra em dispositivos pequenos */
-  color: #333;
-  margin-bottom: 20px;
+.social{color: rgba(6, 153, 166, 1);
+    text-decoration: none;
+    font-family: "fontex";
+    display: flex;
+    justify-content: space-evenly;
 }
-
-.social {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;             /* 🔥 faz os links quebrarem no mobile */
-  gap: 20px;
-  color: rgba(6, 153, 166, 1);
-  text-decoration: none;
+.fest{
+    color: black;
 }
-
-.top {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+.top{
+    display: flex;
+  justify-content: space-evenly;
+  max-width: 300px;
+    width:1440px;
+    margin: 0 auto;
 }
-
-/* ===== Responsividade Footer ===== */
-@media screen and (max-width: 768px) {
-  #footer {
-    padding: 40px 16px;
-  }
-
-  .fest h2 {
-    font-size: 40px;
-  }
-
-  .tega {
-    font-size: 18px;
-  }
-
-  .social {
+@media screen and (max-width:1024px) {
+#footer{
     flex-direction: column;
-    align-items: center;
-  }
+    height: auto;
+    width: 100%;
+    padding-bottom: 80px;
 }
-
+.tega{
+    width: 100%;
+    height: auto;
+}
+.top{
+    width: 100%;
+    height: auto;
+}
+.fest{
+    width: 100%;
+    height: auto;
+}
+}
 /* FIM FOOTER  */
