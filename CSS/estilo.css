@@ -36,8 +36,8 @@ flex-direction: column;
 .foto1{
   width: 350px;
   height: 350px;
-  object-fit: cover;   
-    border-radius: 25px;
+  object-fit: contain;
+  border-radius: 25px;
       
 }
 
