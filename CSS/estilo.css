@@ -116,9 +116,6 @@ flex-direction: column;
   align-items: start;
 }
 
-.container {
-  width: 100%;
-}
 
 /* Coluna esquerda */
 .aside {
