@@ -157,13 +157,13 @@ flex-direction: column;
 }
 
 /* Links */
-.a1 {
+.a {
   color: #0699a6;
   text-decoration: none;
   font-weight: 500;
 }
 
-.a1:hover {
+.a:hover {
   text-decoration: underline;
 }
 
