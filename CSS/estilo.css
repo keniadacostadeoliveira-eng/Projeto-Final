@@ -40,6 +40,11 @@ body, html {
   transform: scale(1.03); /* leve zoom ao passar o mouse */
 }
 
+#banner .container {
+  align-items: center;
+}
+
+
 /* ===== TEXTOS E BOTÃO ===== */
 .dados {
   display: flex;
