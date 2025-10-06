@@ -37,7 +37,7 @@ flex-direction: column;
   width: 350px;
   height: 350px;
   object-fit: contain;
-  border-radius: 25px;
+ border-radius: 25px;
       
 }
 
@@ -104,40 +104,88 @@ flex-direction: column;
 /* FIM BANNER */
 
 /* INICIO MAIN  */
-.main{ 
-  width: 100%; 
-  height: auto;
+/* ======== LAYOUT GERAL ======== */
+.main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr; /* duas colunas (esquerda + direita) */
+  gap: 60px;
+  padding: 0 40px;
+  align-items: start;
+}
+
+.container {
+  width: 100%;
+}
+
+/* Coluna esquerda */
+.aside {
   display: flex;
-  justify-content: space-between;
- }
-.aside{
-   width: 350px;
-   height: auto; 
-  }
-.about{ 
-   width: 635px;
-   height: auto;
-  }
-li{ list-style: none;}
-
-.a1{
-    color: #0699a6;
+  flex-direction: column;
+  gap: 40px;
 }
 
-@media screen and (max-width: 1440px) {
-/*CORPO MAIN*/
-.about{
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: auto;
+/* Coluna direita */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
-.aside{
-    width: 100%;
-    flex-direction: column;
-    margin: auto;
+
+/* Caixas */
+.box {
+  background-color: #f5f3f0;
+  padding: 25px;
+  border-radius: 15px;
+  line-height: 1.6;
+  text-align: justify;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+/* Títulos */
+.box h3, .box h4, .box h5 {
+  margin-top: 0;
+  color: #333;
 }
+
+/* Listas */
+.box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Links */
+.a1 {
+  color: #0699a6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.a1:hover {
+  text-decoration: underline;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media screen and (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .box {
+    background-color: transparent; /* deixa leve no mobile */
+    padding: 15px 0;
+    box-shadow: none;
+  }
+
+  .box h5 {
+    text-align: center;
+  }
+}
+
 /* FIM MAIN  */
 
 /* INICIO FOOTER  */
