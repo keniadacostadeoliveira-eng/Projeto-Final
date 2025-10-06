@@ -1,104 +1,100 @@
-/* CONFIG GERAL */
-
-Body, 
-html{
-    margin: 0;
-    padding: 0;
+/* ===== CONFIG GERAL ===== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-/* INICIO BANNER */
-
-
-
-.container{
-  max-width: 1440px;
-  height: auto;
-  display: flex;
-  margin: 50px auto;
-  gap: 130px;
-}
-
-.dados{
- display: flex;
-flex-direction: column;
-
-}
-
-#banner{
+/* ===== BANNER ===== */
+#banner {
   width: 100%;
-  height: auto;
   background-color: #d3d1ce;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 60px 0;
 }
 
-.foto1{
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  padding: 0 40px;
+}
+
+/* ===== FOTO ===== */
+.foto1 {
   width: 350px;
   height: 350px;
-  object-fit: contain;
- border-radius: 25px;
-      
+  border-radius: 25px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.botao{
+/* ===== TEXTOS E BOTÃO ===== */
+.dados {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sub {
+  font-size: 22px;
+  color: #9E8C6C;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.fonte1 {
+  font-size: 90px;
+  line-height: 1;
+  color: #333;
+  margin: 0;
+}
+
+.botao {
   text-decoration: none;
   background-color: rgb(49, 57, 57);
   color: #F5F3F0;
   padding: 14px 36px;
+  border-radius: 8px;
   display: inline-block;
   letter-spacing: 1px;
   width: fit-content;
-  text-align: center;
-  
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
-
-.fonte1{
-  font-size: 126px;
-  line-height: 0.8;
-  margin: 0 0 25px;
+.botao:hover {
+  background-color: #0699a6;
 }
 
-.sub{
-  font-size: 24px;
-  color: #9E8C6C;
-  letter-spacing: 1px;
-  margin: 0 0 15px;
-  
-}
-
-@media screen and (max-width:1440px) {
-  .container{
-      max-width: 100%;
-      flex-direction: column;
-      gap: 30px;
-      padding: 0 16px;
-      align-items: center;
+/* ===== RESPONSIVIDADE ===== */
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
   }
 
-  #banner{
-      width: 100%;
-      text-align: center;
-      align-items: baseline;
+  .foto1 {
+    width: 250px;
+    height: 250px;
   }
 
-  .foto1{
-      display: block;
-      margin: 0 auto;
+  .fonte1 {
+    font-size: 56px;
   }
 
-  .fonte1{
-      text-align: center;
-      font-size: 45px;
+  .sub {
+    font-size: 18px;
   }
 
-    .botao{
-        padding: 20px 30px;
-         display: flex;
-         width: auto;
-         justify-content: center;
-         border-width: 5px;
+  .botao {
+    margin: 0 auto;
+  }
 }
 
 /* FIM BANNER */
@@ -115,6 +111,7 @@ flex-direction: column;
   padding: 0 40px;
   align-items: start;
 }
+
 
 /* Coluna esquerda */
 .aside {
