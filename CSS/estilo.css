@@ -29,15 +29,16 @@ body, html {
 .foto1 {
   width: 320px;
   height: 320px;
-  border-radius: 20px; /* cantos suavemente arredondados */
+  border-radius: 18px; /* cantos modernos e suaves */
   object-fit: cover;
-  object-position: top center; /* mostra o rosto */
-  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-  transition: transform 0.3s ease;
+  object-position: top center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* sombra mais moderna e leve */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .foto1:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); /* leve realce ao passar o mouse */
 }
 
 /* garante centralização vertical do conteúdo */
