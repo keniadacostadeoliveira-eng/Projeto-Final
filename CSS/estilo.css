@@ -29,7 +29,7 @@ body, html {
 .foto1 {
   width: 320px;
   height: 320px;
-  border-radius: 50%; /* círculo perfeito */
+  border-radius: 20px; /* cantos suavemente arredondados */
   object-fit: cover;
   object-position: top center; /* mostra o rosto */
   box-shadow: 0 6px 20px rgba(0,0,0,0.25);
