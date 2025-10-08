@@ -28,18 +28,19 @@ body, html {
 /* ===== FOTO ===== */
 .foto1 {
   width: 320px;
-  height: 320px;
-  border-radius: 18px; /* cantos modernos e suaves */
+  height: 380px; /* um pouco mais alta — cria o formato oval */
+  border-radius: 50% / 35%; /* arredondamento elíptico (oval moderno) */
   object-fit: cover;
   object-position: top center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* sombra mais moderna e leve */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .foto1:hover {
   transform: scale(1.04);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); /* leve realce ao passar o mouse */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
+
 
 /* garante centralização vertical do conteúdo */
 #banner .container {
